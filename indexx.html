@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaraShape</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color:rgb(229, 199, 190)
+    }
+    .navbar-brand {
+      font-size: 28px;
+      font-weight: 600;
+    }
+    .hero-banner {
+      background: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .hero-banner h2 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #d9534f;
+    }
+    .hero-banner p {
+      font-size: 18px;
+      margin: 10px 0;
+      color: #333;
+    }
+    .hero-banner .btn {
+      background-color: #f5a65b;
+      border: none;
+      padding: 10px 25px;
+      font-weight: 600;
+      border-radius: 6px;
+    }
+    .offer-img {
+      border-radius: 15px;
+      max-width: 100%;
+    }
+     .hero-section {
+      position: relative;
+      background: url('your-image.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000; /* Text color */
+      text-align: center;
+    }
+
+    .hero-text {
+      background: rgba(255, 255, 255, 0.5); /* light overlay for readability */
+      padding: 20px 40px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      font-weight: 400;
+      margin-bottom: 15px;
+    }
+
+.hero-text a {
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: black;
+      border-bottom: 1px solid black;
+      transition: 0.3s;
+    }
+
+    .hero-text a:hover {
+      color: #007bff;
+      border-color: #007bff;
+    }
+ .collection-card img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .collection-card img:hover {
+      transform: scale(1.05);
+    }
+    .collection-title {
+      font-weight: 600;
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+.para{
+  background-color:var(--bg-overlay-color) rgb(142, 180, 134);
+}
+.green-section {
+  background-color:rgb(180, 164, 164); /* replace with actual green color */
+  padding: 20px;
+  color: #fff;
+}
+
+.logo-section {
+  background-color:white; /* replace with actual background color */
+  padding: 20px;
+  text-align: center;
+}
+
+.btn-pink {
+  background-color:pink; /* replace with actual pink color */
+  color: #fff;
+  border: none;
+}
+
+.btn-pink:hover {
+  background-color:darksalmon; /* replace with actual darker pink color */
+}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+        <img src="https://static.wixstatic.com/media/6c1643_855e44fa09814bafbd75b29cf8446528~mv2.png/v1/fill/w_210,h_182,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo.png" width="100">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Dispatch Time</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="d-flex align-items-center">
+        <input type="text" class="form-control me-2" placeholder="Search...">
+        <a href="#" class="btn btn-outline-secondary btn-sm me-2">Account</a>
+        <a href="#" class="btn btn-outline-success btn-sm me-2">Cart</a>
+        <a href="#" class="btn btn-outline-info btn-sm">Help</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="hero-banner container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center">
+        <img src="https://images.pexels.com/photos/128881/beautiful-girl-smiling-da-128881.jpeg" alt="Offer Image" class="offer-img" width="250" height="300">
+      </div>
+      <div class="col-md-4 text-center">
+        <h2>🎉 Flat 25% OFF at SaraShape 🎉</h2>
+        <p>🛍 Shop now and enjoy 25% OFF on all products.</p>
+        <p>⏳ Limited Time Offer – Don’t Miss Out!</p>
+        <button class="btn">SHOP NOW</button>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="https://images.pexels.com/photos/1144850/pexels-photo-1144850.jpeg" alt="Offer Image" class="offer-img" width="250" height="300">
+      </div>
+    </div>
+  </section>
+
+  <!-- Comfort Zone Section -->
+  <section class="container text-center py-5">
+    <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-text">
+      <h1>Comfort Zone</h1>
+       <p class="text-muted">Discover comfort with our latest shapewear collections.</p>
+      <img src="https://images.pexels.com/photos/3605015/pexels-photo-3605015.jpeg" width="1100" height="880" alt=>
+      <a href="#">SarasShape</a>
+    </div>
+    
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   <div class="container py-5">
+    <h2 class="text-center text-success">Our Collections</h2>
+    <p class="text-center text-muted mb-5">
+      "The Latest Styles of the Season at SaraShape!"
+    </p>
+
+    <div class="row g-4">
+      <!-- Item 1 -->
+      <div class="col-md-4">
+        <div class="collection-card text-center">
+          <img src="https://i.pinimg.com/736x/02/a4/9d/02a49d420f8e03babbf3596b3e6af159.jpg" alt="ShapeWear">
+          <div class="collection-title">ShapeWear</div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="col-md-4">
+        <div class="collection-card text-center">
+          <img src="https://themomstore.in/cdn/shop/files/one-piece-wonder-maternity-jumpsuit-1795875_770x_crop_center.jpg?v=1755582353" alt="Maternity Series">
+          <div class="collection-title">Maternity Series</div>
+        </div>
+      </div>
+
+<!-- Item 3 -->
+      <div class="col-md-4">
+        <div class="collection-card text-center">
+          <img src="https://rihaa.com/cdn/shop/files/67D28AFB-860D-4B08-B3A5-3F08F404C843.jpg?v=1694352650&width=900" alt="Kids Essentials">
+          <div class="collection-title">Kids Essentials</div>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="col-md-4">
+        <div class="collection-card text-center">
+          <img src="https://i.pinimg.com/736x/f0/b0/ff/f0b0fff09b48824527d2bf1d0c8f2fc0.jpg" alt="Casual Wear">
+          <div class="collection-title">Casual Wear</div>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="col-md-4">
+        <div class="collection-card text-center">
+          <img src="https://i.pinimg.com/1200x/08/47/59/084759a019a20690178e21a4ce645090.jpg" alt="Night Wear">
+          <div class="collection-title">Night Wear</div>
+        </div>
+      </div>
+ <!-- Item 6 -->
+      <div class="col-md-4">
+        <div class="collection-card text-center">
+          <img src="https://vstyleblog.com/wp-content/uploads/2024/10/cute-loungewear-outfits-scaled.jpg" alt="Lounge Wear">
+          <div class="collection-title">Lounge Wear</div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<div class="container">
+  <h2 class="text-center">Best Sellers</h2>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/a1/e3/a1/a1e3a1b962b2bbd954dbd221b6e2a9e7.jpg" class="card-img-top"  alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Asin Modal Chanderi Kurti</h5>
+      
+           <button class="btn">Pre</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="https://www.soosi.co.in/cdn/shop/products/WhatsAppImage2021-10-23at22.10.29_1_2048x.jpg?v=1635009687"  height="510" class="card-img-top" alt="Product 2">
+        <div class="card-body">
+          <h5 class="card-title">Thamarai Pure Cotton Dress</h5>
+          <p class="card-text">NEW ARRIVAL</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="https://krishcollections.in/wp-content/uploads/2025/05/IMG-20240823-WA03122.jpg" class="card-img-top" height="510" alt="Product 3">
+        <div class="card-body">
+          <h5 class="card-title">Feeding Cotton Dress</h5>
+          <p class="card-text">NEW ARRIVAL</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/b9/e8/8d/b9e88dcb342c298d6579ed61c06a9a79.jpg" class="card-img-top" height="510" alt="Product 4">
+        <div class="card-body">
+          <h5 class="card-title">Cotten/Georget Saree</h5>
+          <p class="card-text">NEW ARRIVAL</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 green-section">
+      <h2>WELCOME TO SARASHAPE</h2>
+      <p>Brief description of the brand Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem id nisi vel sapiente eius odit eum, voluptas dolorum distinctio molestias fugit facere cumque, ea doloremque aliquam. Recusandae quam voluptates explicabo!</p>
+      <p>Brief description of the brand Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem id nisi vel sapiente eius odit eum, voluptas dolorum distinctio molestias fugit facere cumque, ea doloremque aliquam. Recusandae quam voluptates explicabo!</p>
+      <p>Brief description of the brand Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem id nisi vel sapiente eius odit eum, voluptas dolorum distinctio molestias fugit facere cumque, ea doloremque aliquam. Recusandae quam voluptates explicabo!</p>
+      <p>Brief description of the brand Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem id nisi vel sapiente eius odit eum, voluptas dolorum distinctio molestias fugit facere cumque, ea doloremque aliquam. Recusandae quam voluptates explicabo!</p>
+      <button class="btn btn-pink">About Me</button>
+    </div>
+    <div class="col-md-6 logo-section">
+      <img src="https://static.wixstatic.com/media/6c1643_855e44fa09814bafbd75b29cf8446528~mv2.png/v1/crop/x_0,y_0,w_335,h_289,q_85,enc_avif,quality_auto/6c1643_855e44fa09814bafbd75b29cf8446528~mv2.png" alt="Sarashape Logo">
+    </div>
+  </div>
+</div>
+<br><br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 ">
+      <h2>WELCOME TO SARASHAPE</h2>
+      <p>Brief description of the brand Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem id nisi vel sapiente eius odit eum, voluptas dolorum distinctio molestias fugit facere cumque, ea doloremque aliquam. Recusandae quam voluptates explicabo!</p>
+      <p>Brief description of the brand Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem id nisi vel sapiente eius odit eum, voluptas dolorum distinctio molestias fugit facere cumque, ea doloremque aliquam. Recusandae quam voluptates explicabo!</p>
+      <p>Brief description of the brand Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem id nisi vel sapiente eius odit eum, voluptas dolorum distinctio molestias fugit facere cumque, ea doloremque aliquam. Recusandae quam voluptates explicabo!</p>
+      <p>Brief description of the brand Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem id nisi vel sapiente eius odit eum, voluptas dolorum distinctio molestias fugit facere cumque, ea doloremque aliquam. Recusandae quam voluptates explicabo!</p>
+    </div>
+    <div class="col-md-6 ">
+      <img src="https://i.pinimg.com/736x/50/4b/ae/504baef8e3bd11a3eb641ca78e8a25c7.jpg"  width="280" alt="kurthi">
+      
+    </div>
+  </div>
+</div>
+<br><br>
+
+<div class="container" style="background-color:antiquewhite;">
+  <form>
+    <div class="row">
+      <div class="col-md-6 mb-3 colspan">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name">
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="phone">
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" required>
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control" id="message" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-dark">Send</button>
+  </form>
+</div>
+<br><br>
+<center>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6" style="background: linear-gradient(to bottom, #e7d4ab); color: #2c2727; padding: 30px;">
+      <h2>Contact Information</h2>
+      <p>Sarashape,</p>
+      <p>200 Sathy Road,</p>
+      <p>Near CRI Hospital</p>
+      <p>Saravanampatti,</p>
+      <p>Coimbatore</p>
+      <p>ph:+9876542345</p>
+      <i>Sarashape@gmail.com</i>
+      <br>
+      <img src="https://png.pngtree.com/png-clipart/20200722/original/pngtree-modern-watercolor-splash-social-media-icon-set-design-vector-png-image_5050606.jpg"width="200">
+    </div>
+      </center>
+</body>
+</html>
